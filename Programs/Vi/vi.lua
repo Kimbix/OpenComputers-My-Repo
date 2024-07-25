@@ -1,14 +1,8 @@
 local shell = require("shell")
 
-local vi_url = "https://cdn.githubraw.com/Kimbix/OpenComputers-My-Repo/main/vi.lua"
-local vi_dest = "/bin/vi.lua"
-
 local args, options = shell.parse(...)
 
-if options.help then
-    print("--help ")
-end
-
-if options.U then
-    shell.execute("wget -f " .. vi_url .. " " .. vi_dest)
+if options.h then
+    print("Usage vi <file> <flags>")
+    print("-h Prints this help message")
 end
