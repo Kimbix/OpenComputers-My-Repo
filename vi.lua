@@ -10,5 +10,5 @@ if options.help then
 end
 
 if options.U then
-    shell.execute("wget -f" .. vi_url .. " " .. vi_dest)
+    shell.execute("wget -f " .. vi_url .. " " .. vi_dest)
 end
