@@ -5,6 +5,10 @@ local vi_dest = "/bin/vi.lua"
 
 local args, options = shell.parse(...)
 
-if options.u then
+if options.help then
+    print("--help ")
+end
+
+if options.U then
     shell.execute("wget -f" .. vi_url .. " " .. vi_dest)
 end
